@@ -1,0 +1,21 @@
+"""
+05_pbi_load_pipeline.py — Power BI Python Data Source (Pipeline Metrics)
+=========================================================================
+
+HOW TO USE THIS IN POWER BI:
+    1. Open Power BI Desktop
+    2. Click "Get Data" → "Python Script"
+    3. Copy-paste the code below into the script editor
+    4. Click OK — Power BI will load the pipeline_metrics table
+
+The table has 6 rows (one per funnel stage):
+    Awareness → Lead → Qualified → Proposal → Negotiation → Closed Won
+Each row has: stage name, count, and conversion rate to next stage.
+"""
+
+import pandas as pd
+
+# ── UPDATE THIS PATH to match your project location ──
+CSV_PATH = r"D:\future_interns\FUTURE_DS_1\sales-dashboard\exports\pipeline_metrics.csv"
+
+pipeline_metrics = pd.read_csv(CSV_PATH)

@@ -1,0 +1,11 @@
+# NexaRetail Sales Dashboard — Python Dependencies
+# Power BI Desktop Architecture (no browser/web dependencies needed)
+#
+# Install with: pip install -r requirements.txt
+
+pandas>=2.0.0          # Data manipulation and CSV export
+numpy>=1.24.0          # Numerical calculations
+openpyxl>=3.1.0        # Read Excel files (UCI dataset is .xlsx)
+prophet>=1.3.0         # Time-series forecasting (Facebook Prophet)
+python-dotenv>=1.0.0   # Load .env configuration
+scikit-learn>=1.6.0    # ML utilities (used by Prophet internally)
