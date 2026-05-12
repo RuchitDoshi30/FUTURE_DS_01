@@ -62,7 +62,7 @@ A board-level [ANALYSIS_REPORT.md](ANALYSIS_REPORT.md) with:
 sales-dashboard/
 ├── data/
 │   ├── fetch_data.py          # 10-stage data cleaning + feature engineering pipeline
-│   ├── raw/                   # Raw Excel data (gitignored — 45.6 MB)
+│   ├── raw/                   # Raw Excel data
 │   └── __init__.py
 ├── processing/
 │   ├── transform.py           # KPI computation, aggregations, BI transformations
@@ -80,7 +80,7 @@ sales-dashboard/
 │   ├── 04_pbi_load_forecast.py# Power BI Python data source (forecast)
 │   └── 05_pbi_load_pipeline.py# Power BI Python data source (pipeline)
 ├── exports/                   # Pre-computed CSV files for Power BI consumption
-│   ├── sales_transactions.csv # Full cleaned dataset (gitignored — 177 MB)
+│   ├── sales_transactions.csv # Full cleaned dataset 
 │   ├── monthly_revenue.csv
 │   ├── category_summary.csv
 │   ├── region_summary.csv
